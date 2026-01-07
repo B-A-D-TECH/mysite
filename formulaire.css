@@ -1,0 +1,37 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #faf8f875;
+    padding: 10px;
+}
+
+.container {/**Selecteur de classe**/
+    background: white;/*Couleur de fond*/
+    padding: 20px;/*Espacement intérieur*/
+    max-width: 600px;/*Largeur maximale*/
+    margin: auto;/*Centrer horizontalement*/
+    border-radius: 10px;/*Coins arrondis*/
+    box-shadow: 0 0 10px #aaa;/*Ombre portée*/
+}
+h1{
+    text-align: center;/*Centrer le texte*/
+}
+input,button{
+    width : 100%;/*Largeur complète*/
+    margin-bottom: 10px;/*espace externe vers le bas*/
+    padding: 10px;/*Espacement intérieur*/
+    box-sizing: border-box;/*Inclure le padding dans la largeur*/
+    border: 1px solid #ccc;/*Ajoute une bordure lisible*/
+    border-radius: 5px;/*Coins arrondis(arrondir les bords)*/
+}
+.error{
+    color: red;
+}
+.success{
+    color: green;
+}
+.folder{
+    color: blue;
+}
+.foldererror{
+    color: orange;
+}

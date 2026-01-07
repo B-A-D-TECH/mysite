@@ -1,0 +1,72 @@
+/* *,body{ */
+  /* Nettoyage : suppression de commentaires et règles sans effet */
+.navbar {
+  position: relative;
+  z-index: 1;
+  font-family: system-ui, Segoe UI, Roboto, Arial, sans-serif;
+  text-align: center;
+ 
+  
+}
+
+.navbar ul {
+  margin: 0;
+  border-radius: 15px;
+  padding: 5px 10px;
+  list-style: none;
+  display: inline-flex;
+  gap: 40px;
+  background-color: #49aaeb;
+}
+
+/* Boutons nav */
+.navbar button {
+  all: unset;            /* reset propre */
+  cursor: pointer;
+  color: #111;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  position: relative;    /* pour le ::after */
+  padding: 8px 0;
+}
+/* les ancres dans la navbar sont stylées ci-dessous */
+/* Barre rouge animée */
+.navbar button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  background: #eb0404;   /* rouge */
+  transform: scaleX(0);  /* replié */
+  transform-origin: center;
+  transition: transform 260ms ease;
+}
+
+/* Actif = barre déployée */
+.navbar li.active > button::after {
+  transform: scaleX(1);
+}
+
+/* Support si la classe 'active' est ajoutée sur le bouton (fallback JS ou autre) */
+.navbar li > button.active::after,
+.navbar li:focus-within > button::after {
+  transform: scaleX(1);
+}
+
+/* accessibilité: retirer le contour par défaut si vous gérez le focus visuel autrement */
+.navbar button:focus {
+  outline: none;
+}
+
+/* Optionnel: feedback au survol */
+.navbar button:hover::after {
+  transform: scaleX(1);
+  opacity: 0.7;
+}
+.navbar a{
+  text-decoration: none;
+  color: #111;
+}

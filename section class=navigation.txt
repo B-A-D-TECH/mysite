@@ -1,0 +1,336 @@
+<section class="navigation">
+            <nav>
+                <ol>
+                    <li id="home"><a href="#Home">Home</a></li>
+                    <li id="about"><a href="#About">About</a></li>
+                    <li id="services"><a href="#Services">Services</a></li>
+                </ol>
+            </nav>
+
+     </section>
+
+
+    <!-- Main container -->
+    <div class="container">
+
+     <!-- Content goes here -->
+    
+     <!-- Header section -->
+     <header>
+        
+       
+        <h1>D.SHOP</h1>
+
+        <!-- Introduction section -->
+        <section class="introduce">
+        <h2>Welcome to My D.shop</h2>
+        <p>We are a company that sells products online.
+        Our mission is to provide high-quality products at affordable prices.
+        Browse our selection and find something you love!
+        </p>
+
+       </section>
+
+       <!--Les thèmes-->
+
+       <section class="link">
+    <a href="Item-shirt/t-shirt.html" >
+       T-shirt
+    </a>
+    <a href="#contact-info">me</a>
+</section>
+    </header>
+
+
+     <!--Products section Fiche produit : Photos multiples, description complète, prix, bouton "Ajouter au panier", avis clients.
+Page catégorie : Filtres de recherche, présentation des produits en grille.-->
+    <div class="products">
+        
+        <!--titre du item-shirt-->
+        <h2 class="item-shirt">T-shirt</h2>
+
+        <!-- Séparateur -->
+        <div class="separate"></div>
+
+        <!-- Product list -->
+        <section class="product-list">
+            
+            <ul>
+                <!--first product-->
+                <li class="product-item" id="ap">
+                    <strong> 
+                    <img class="product-img rounded" src="img/prod1.jpg" alt="Produit 1 - GAB">
+                    <p id="p1">GAB — Price: $10.00</p>
+                </li>
+
+                <!--second product-->
+                <li>
+                    <img class="product-img rounded" src="img/prod2.jpg" alt="Produit 2 - GA">
+                    <p id="p2">GA — Price: $15.00</p>
+                </li>
+
+                <!--third product-->
+                <li>
+                    <img class="product-img rounded" src="img/prod3.jpg" alt="Produit 3 - GV">
+                    <p id="p3">GV — Price: $20.00</p>
+                </li>
+
+                <!--fourth product-->
+                <li>
+                    <img class="product-img" src="img/pexels-liuuu-_61-2383408-34549305.jpg" alt="Robe — produit additionnel">
+                    <p>Dress — Price: $25.00</p>
+                </li>
+                <!--fifth product-->
+                <li>
+                    <img class="product-img" src="img/pexels-athena-1758144.jpg" alt="T-shirt — produit additionnel">
+                    <p>T-shirt — Price: $12.00</p></strong>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+
+    <!-- Footer / Contact -->
+   <!--Page catégorie : Filtres de recherche, présentation des produits en grille.
+-->
+    <footer>
+        <section class="contact-info">
+            <h2 id="contact-info">Contact Us</h2>
+            <p>
+                Lien e-mail : <a href="mailto:bad.no.worst@gmail.com">Envoyer un e-mail</a>
+            </p>
+            <p>
+                Lien téléphone : <a href="tel:+212772172379">Appeler moi</a>
+            </p>
+            
+        </section>
+    </footer>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Commentaires ajoutés :
+   - Ce fichier contient les styles principaux du site.
+   - J'ajoute des commentaires pour clarifier chaque section.
+   - Deux lignes vides sont laissées entre les grandes parties pour la lisibilité.
+*/
+
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    
+    padding: 0px;
+    margin:0;
+}
+h1{
+    text-decoration: underline;
+    text-underline-position: under;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    font-size: 40px;
+    color: navy;
+
+}
+
+header{
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    padding: 10px;
+    
+    border-radius: 0px;
+    margin: auto;
+
+}
+header h2{
+    margin:0;
+    font-family: sans-serif;
+}
+.link{
+    text-align: center;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     
+}
+
+header a {
+  outline: none;
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 20px;
+  text-underline : none;
+}
+
+header a:link {
+  color: #265301;
+}
+
+header a:visited {
+  color: #437a16;
+}
+
+header a:focus {
+  border-bottom: 1px solid;
+  background: #bae498;
+}
+
+header a:hover {
+  border-bottom: 1px solid;
+  background: #cdfeaa;
+}
+
+header a:active {
+  background: #265301;
+  color: #cdfeaa;
+}
+
+
+.image-container {
+    position: relative; /* Permet de placer le texte par rapport à l'image */
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+    width: auto; /* Ajuste selon tes besoins */
+    cursor: pointer;
+    height: 50px;
+     margin-left: 80px;
+     margin-bottom: 10px;
+    
+    }
+    .image-container img:hover{
+       transform: scale(1.05);
+    transition: transform 0.3s;
+    }
+
+.text-overlay {
+    color: black; /* Couleur du texte */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 50%;
+   
+}/**ASK **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    background-color: rgba(245, 245, 245, 0.619);
+    padding-left: 20px;
+    margin: auto;
+     border-radius: 8% ;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color:#f6f0f097;
+}
+.products{
+    margin-top: 20px;
+    padding: 30px;
+    padding-left: 40px;
+}
+.product-list ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.product-list li{
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #0c0707;
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+}
+
+
+/* Align #ap, #bp, #cp on the same line */
+.product-list li {
+    display: inline-block;
+    padding-left: 2px;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.product-list li p:hover {
+    color: #e88a4fa8;
+    transition: color 0.3s;
+}
+.product-list img {
+    max-width: 100%;
+    display: block;
+    padding-top: 10px;
+     width: 260px;
+    height:  260px;
+    margin: 20px auto;
+    padding: 0px;
+     border-radius: 10%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+    cursor: pointer;
+}
+.product-list img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+
+/* Align #ap, #bp, #cp on the same line */
+#home, #about, #services {
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.item-shirt{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+   text-shadow: #0c0707 1px 1px 1px;
+   
+}  
+header h2{
+    text-decoration: solid underline;
+   text-decoration-line: 100%;
+} 
+.seperate{
+    height: 2px;
+    background-color: #e88a4fa8;
+    margin: 20px 0;
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 10px;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+}

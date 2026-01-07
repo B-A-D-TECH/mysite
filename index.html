@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!--Logo & Branding : Votre logo, souvent à gauche, identifie immédiatement votre marque. 
+    Il peut être accompagné d'un slogan pour renforcer l'identité.
+
+    Navigation Principale : Un menu clair avec les catégories principales (Femme, Homme, Enfants, Promotions, etc.).
+
+    Recherche : Une barre de recherche proéminente pour une recherche rapide de produits.
+
+    Actions Utilisateur : Icônes pour la connexion/compte client et le panier d'achat, 
+    souvent en haut à droite, avec un indicateur du nombre d'articles.
+
+    Barre de Notifications : Une bande supérieure pour des annonces urgentes (livraison gratuite, soldes).
+
+    Utilitaires : Liens vers les réseaux sociaux, sélecteur de langue, numéro de téléphone (cliquable). 
+
+    Exemples de mises en page :
+
+    Header classique : Logo à gauche, menu au centre ou à droite, icônes utilitaires à l'extrême droite.
+
+    Header à deux niveaux : Une barre supérieure pour les notifications ou le contact, 
+    et une barre inférieure pour le logo et la navigation.
+
+    Menu Hamburger : Pour un design épuré, surtout sur mobile, où les liens s'affichent dans un panneau latéral ou plein écran.
+
+    Header Fixe (Sticky) : Reste visible en haut de l'écran lorsque l'utilisateur fait défiler la page, 
+    garantissant un accès constant à la navigation et au panier. 
+
+    Bonnes pratiques :
+
+    Priorité : Le logo, la recherche et le panier sont essentiels.
+
+    UX (Expérience Utilisateur) : Il doit être intuitif, permettant de trouver et d'acheter facilement.
+
+    Visibilité : Utilisez des contrastes clairs pour les icônes et les CTA (Appels à l'action). -->
+    <!-- Navigation -->
+      
+     <div class="container">
+        <header>
+           <!--Logo & Branding : Votre logo, souvent à gauche, identifie immédiatement votre marque. 
+    Il peut être accompagné d'un slogan pour renforcer l'identité.-->
+    <section class="logo">
+      
+    </section>
+    <!--Navigation Principale : Un menu clair avec les catégories principales (Femme, Homme, Enfants, Promotions, etc.).-->
+    <section class="navigation">
+     <nav class="navbar">
+  <ul>
+    <li class="active">
+      <button type="button"><a href="#">Home</a></button>
+    </li>
+    <li>
+      <button type="button"><a href="#1">Blogs</a></button>
+    </li>
+    <li>
+      <button type="button"><a href="#2">Services</a></button>
+    </li>
+    <li>
+      <button type="button"><a href="#3">Contact</a></button>
+    </li>
+    <li>
+      <button type="button"><a href="#4">About</a></button>
+    </li>
+  </ul>
+</nav>
+    </section>
+        </header>
+    
+    </div>
+    
+       
+</body>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        document.querySelectorAll('.navbar a').forEach(function(link){
+          link.addEventListener('click', function(e){
+            // trouver le <li> parent et basculer la classe active
+            var li = link.closest('li');
+            if(!li) return;
+            document.querySelectorAll('.navbar li').forEach(function(item){ item.classList.remove('active'); });
+            li.classList.add('active');
+          });
+        });
+      });
+    </script>
+</html>
