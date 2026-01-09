@@ -297,9 +297,12 @@ button {
 
 
 /* MENU */
-
+.menu{
+  width:100%;
+  background-color: #4A9DEC;
+}
 .btn {
-  width: 100%;
+  width: 50px;
   height: 50px;
   border-radius: 5px;
   border: none;
@@ -355,13 +358,14 @@ button {
 background: #EFF7FF; /* bleu très clair - accord avec recherche, moderne et premium */
 border: 2px solid #4A9DEC;
 border-radius: 8px;
-  width: 100%;
+  width: 97%;
   font-size: larger;
   font-weight:300;
   font-family: Arial, Helvetica, sans-serif;
   padding: 20px;
   box-shadow: 0 2px 8px rgba(74, 157, 236, 0.1);
-  
+  display: flex;
+  margin-bottom: 25px;
 }
 .card_choose{
   --font-color: #323232;
@@ -370,7 +374,7 @@ border-radius: 8px;
   --main-color: #323232;
   --main-focus: #2d8cf0;
   width: 230px;
-  height: 300px;
+  height: 100px;
   /* background: var(--bg-color); */
   border: 2px solid var(--main-color);
   box-shadow: 4px 4px var(--main-color);
@@ -381,7 +385,10 @@ border-radius: 8px;
   padding: 20px;
   gap: 10px;
   font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 15px 15px 15px 50px;
+  position: relative;
 }
+
 .card_choose1{
   --font-color: #323232;
   --font-color-sub: #666;
@@ -389,7 +396,7 @@ border-radius: 8px;
   --main-color: #323232;
   --main-focus: #2d8cf0;
   width: 230px;
-  height: 300px;
+  height: 100px;
   /* background: var(--bg-color); */
   border: 2px solid var(--main-color);
   box-shadow: 4px 4px var(--main-color);
@@ -400,6 +407,7 @@ border-radius: 8px;
   padding: 20px;
   gap: 10px;
   font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 15px;
 }
 
 
